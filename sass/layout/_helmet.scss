@@ -1,0 +1,89 @@
+
+
+.banner  {      
+    background: $back-color;  } 
+
+.heading{      
+        @include fonts(900);
+         font-size: 26px;
+         line-height: 42px;
+         color:$my-color;
+         letter-spacing: 0.06em; 
+        text-align: center;   }
+ @media (min-width:1200px){
+    .heading{  
+         width: 696px;
+         height: auto;
+         margin: 0px auto;
+         padding-top: 100px;
+         padding-bottom: 30px;
+         text-align: center;
+         text-transform: uppercase;
+         font-size: 44px;
+         line-height: 60px;
+} 
+ }       
+.helmet{ 
+    width: auto;
+    height: 400px;
+        background: linear-gradient(
+                   to right, rgba(47, 48, 58, 0.4), 
+                   rgba(47, 48, 58, 0.4)),
+                   url(../../images-new/Header-mobile-img.png);
+        background-repeat: no-repeat; 
+        background-position: center;
+        background-size: cover; 
+        padding-top: 148px;
+        padding-bottom: 118px;
+            
+           }
+
+@media (min-width:768px){
+    .helmet{ 
+        width: auto;
+        height: 400px;
+            background: linear-gradient(
+                       to right, rgba(47, 48, 58, 0.4), 
+                       rgba(47, 48, 58, 0.4)),
+                       url(../../images-new/Header-mobile-img@2x.png);
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-size: cover; 
+            padding-top: 108px;
+            padding-bottom: 118px;
+                
+               }
+      }
+
+      @media (min-width:768px){
+        .helmet{
+            padding-top: 108px;
+            padding-bottom: 118px; 
+        } } 
+        
+        
+      @media (min-width:1200px){
+        .helmet{
+            height: 600px;
+            padding-top: 90px;
+            padding-bottom: 158px; 
+        } }    
+           
+           
+.heading{
+
+        width: 360px;
+        height: auto;
+        margin: 0px auto;
+        padding-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;        }
+
+ @media (min-width:1200px){
+     .heading{
+        width: 696px; 
+     }
+ }       
+
+ 
+        

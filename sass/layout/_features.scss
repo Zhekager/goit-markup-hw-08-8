@@ -1,0 +1,170 @@
+
+
+/*особенности*/
+
+.subject{
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 0.03em;
+    color: $accent-text; }
+.lead{
+    @include fonts(400);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $text-color; }
+.subtitle{
+    @include fonts(700);
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: $accent-text;  } 
+.visually-hidden {
+     position: absolute;
+     clip: rect(0 0 0 0);
+     width: 1px;
+     height: 1px;
+     margin: -1px;  } 
+.element{
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;          
+
+    @media (min-width:1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    max-width: 1200px;
+    margin: 0 auto; 
+    // @include flexCenter(block);
+    // width: auto;
+    // height: auto;      }
+//  @media (min-width:768px){
+//      .text{
+//         @include flexCenter(flex);  
+//      }
+//  } 
+//  @media (min-width:1200px){
+//     .text{
+//        @include flexCenter(flex);  
+//     }
+} 
+
+
+
+
+.rubric {
+    flex: 0 1 calc(100% / 4 - 15px);
+    min-height: 100px;
+    margin-bottom: 20px;
+
+    
+}
+@media (max-width: 1200px) {
+  .text {
+        justify-content: space-around;
+    }  
+  .rubric {
+        flex: 0 1 calc(100% / 3 - 15px);
+    }
+}
+@media (max-width: 768px) {
+    .rubric {
+        flex: 0 1 calc(100% / 2 - 15px);
+    }
+}
+@media (max-width: 480px) {
+    .rubric {
+        flex: 0 1 100%;
+    }
+}
+
+.rubric{
+    @include flexCenter(block);
+     width: 450px;
+     height: 226px;
+    //  margin-right: 30px; 
+         }
+ @media (min-width:768px){
+     .rubric{
+        width: 354px;
+        height: 251px;
+     }
+ } 
+  
+ @media (min-width:1200px){
+    .rubric{
+       width: 270px;
+       height: 251px;
+    }
+} 
+
+.subject{
+    @include flexCenter(flex);
+    width: auto;
+    height: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    padding-top: 30px;
+    
+    text-transform: uppercase;
+    color:$accent-text;   }
+ @media (min-width:768px){
+    .subject{
+        @include flexCenter(block); 
+    }
+ }   
+.lead{
+    // width: 270px;
+    // height: 75px;
+    padding-top: 10px;
+    font-family: Roboto;   } 
+
+  
+.vektor-antenna,
+.vektor-clock,
+.vektor-diagram,
+.vektor-astronaut{
+               width: 450px;
+               height: 120px;
+               background: $my-accent;
+               background-position: center;
+               background-repeat: no-repeat;
+               border-radius: 4px;      
+               background-size: 70px 70px;      }
+  @media (min-width:768px){
+    .vektor-antenna,
+.vektor-clock,
+.vektor-diagram,
+.vektor-astronaut{ 
+    width: 354px;
+    height: 120px;
+     }
+   
+  }
+@media (min-width:1200px){
+.vektor-antenna,
+.vektor-clock,
+.vektor-diagram,
+.vektor-astronaut{ 
+    width: 270px;
+    height: 120px;
+}
+   
+  } 
+
+.vektor-antenna{
+                background-image: url(../svg/antenna.svg);     }
+.vektor-clock{  
+                background-image: url(../svg/clock.svg);    }
+.vektor-diagram{
+                background-image: url(../svg/diagram.svg);    }
+.vektor-astronaut{           
+                background-image: url(../svg/astronaut.svg);    }                        

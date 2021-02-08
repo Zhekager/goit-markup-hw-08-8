@@ -1,0 +1,329 @@
+/* модальное окно */
+
+@mixin flexCenter($type){
+    display: $type;
+    align-items: center;
+    justify-content: center;   
+}
+@mixin transform {
+   transition-property: background-color,fill, border-color;
+   transition-duration: 250ms;
+   transition-timing-function: linear;
+}
+@mixin fonts ($type){
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: $type;
+  
+}
+@mixin transformSocial {
+   transition-property: background-color,fill ;
+   transition-duration: 250ms;
+   transition-timing-function: linear;
+}
+$ghost-color: #EEEEEE;
+$accent-link:#AFB1B8;
+$my-accent:#F5F4FA;
+$back-color: #2F303A;
+$text-color: #757575;
+$accent-text:#212121;
+$my-color:#ffffff;
+$accent-color: #2196F3;
+
+
+/* модальное окно */
+
+.backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);     } 
+.window{
+    position: absolute;
+    width: 450px;
+    height: 609px;
+    top: 50%;
+    left: 50%;
+    padding: 40px 41px;
+    transform: translate(-50%, -50%);
+    background-color: $my-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;     }
+    @media (min-width:1200px){
+        .window{
+            width: 528px;
+            height: 581px;  
+        }
+    }
+.close-black{
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 8px;
+    top: 8px;
+    background:$my-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding-left: 7px;
+    padding-bottom: 3px; 
+       &:hover>.icon-Vector-close,
+       &:focus>.icon-Vector-close{
+          fill:$accent-color;     
+    }
+ }
+.backdrop.is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;    }
+
+
+.heading-modal{
+    width: auto;
+    height: auto;
+    @include fonts(700);
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:$accent-text;      }
+
+    @media (min-width:1200px){
+        .heading-modal{
+            width: 448px;
+            height: 23px;
+        }
+    }
+.name-modal,
+.tel-modal,
+.email-modal,
+.comment-modal{
+    margin-bottom: 4px;
+    margin-top: 10px;
+    @include fonts(400);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    cursor: pointer;    
+    color: $text-color;
+    transition: transform 250ms linear;     }
+.textarea{
+    cursor: pointer;
+    width: 100%;
+    height: 120px;
+    padding: 10px  16px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;   }
+.comment-block{
+    height: 138px;
+    margin-bottom: 20px;  }      
+.name-input-modal,
+.tel-input-modal,
+.email-input-modal{
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    padding-left: 35px;
+    padding-bottom: 6px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;   }
+.Vector-name{ 
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    position: absolute;
+    left: 12px;
+    top: 55%;
+    fill: $accent-text; 
+    transition: transform 250ms linear;     }
+.Vector-tel{
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    position: absolute;
+    left: 12px;
+    top: 55%;
+    fill: $accent-text; 
+    transition: transform 250ms linear;     }
+.Vector-mail{
+    cursor: pointer;
+    width: 15px;
+    height: 12px;
+    position: absolute;
+    left: 12px;
+    top: 55%;
+    fill: $accent-text; 
+    transition: transform 250ms linear;  }
+.name-block,
+.tel-block,
+.email-block{ 
+    position: relative;   } 
+.name-block,
+.name-block{
+          &:hover > .Vector-name,
+          &:focus-within > .Vector-name{ fill: $accent-color;     
+          @include transform;
+        }
+      }
+.tel-block,
+.tel-block{
+    &:hover> .Vector-tel,
+    &:focus-within > .Vector-tel{
+        fill: $accent-color;
+        @include transform;   
+    }
+    
+        }
+.email-block,
+.email-block{
+    &:hover> .Vector-mail,
+    &:focus-within> .Vector-mail{
+        fill: $accent-color;
+        @include transform;
+    }
+       }
+.name-input-modal{
+    &:hover{
+        border-color: $accent-color; 
+        @include transform;  
+    }
+}
+
+.tel-input-modal{
+    &:hover{
+        border-color: $accent-color; 
+        @include transform; 
+    }
+}
+
+.email-input-modal{
+    &:hover{
+        border-color: $accent-color; 
+        @include transform;  
+    }
+}
+
+ .textarea{
+     &:hover{
+        border-color: $accent-color; 
+        @include transform; 
+     }
+ }
+
+.name-block{
+    &:focus-within> input{
+        border-color: $accent-color; 
+   @include transform;
+    }
+       }
+
+input[type=text],[type=tel],[type=email],textarea{
+    transition: all 0.25s ease;
+    outline: none;      }           
+input[type=text]:focus,[type=tel]:focus,[type=email]:focus,textarea:focus{
+    border-color: $accent-color;          }
+
+.textarea{
+        &:focus-within{
+          border-color: $accent-color;  
+    }
+       }
+.textarea::placeholder{
+    color: rgba(117, 117, 117, 0.5);     }
+.send-button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background:$accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;    
+    border-color:$accent-color;   }
+.send-text{
+    @include fonts(700);
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;     
+    color: $my-color;      }
+.send-modal{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;     }
+.agreement{
+    @include fonts(400);
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $accent-color;    
+    text-decoration: underline;
+    text-decoration-skip-ink: none;    }
+
+@media (min-width:1200px){
+        .agreement{
+            font-size: 14px; 
+        }
+    }   
+
+.checkbox-text{
+    @include fonts(400);
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.03em;    
+    color: $text-color;
+    margin-left: 20px;     }
+
+    @media (min-width:1200px){
+        .checkbox-text{
+            font-size: 14px; 
+        }
+    }
+
+.icon-Vector-close{
+    fill: $accent-text;    }
+.checkbox-agreement{     
+    appearance: none;    }
+.checkbox-mark{
+    position: relative;
+    
+    cursor: pointer;    } 
+
+    @media (min-width:1200px){
+        .checkbox-mark{
+         padding: 10px;   
+        } 
+    }
+.Vector-mark{
+    position: absolute;
+    left: 0px;
+    top: 20%;
+    margin: 0px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid rgb(21, 21, 21);   
+}
+
+@media (min-width:1200px){
+    .Vector-mark{
+        left: 10px;
+        top: 35%; 
+    }
+}
+.checkbox-agreement:checked + .Vector-mark{
+    background-color: $accent-color;
+    border: 0px;
+    background-image: url('../images/Vector-check.svg');
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;    }

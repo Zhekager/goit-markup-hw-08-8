@@ -1,0 +1,232 @@
+// наша команда
+.caption{
+    @include fonts(700);
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: $accent-text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+ }
+
+// .userpic:not(:last-child)
+// {
+//     margin-right: 30px;      
+// }
+.names
+.col{
+    @include fonts(500);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em; 
+ }
+ .specialty{      
+    @include fonts(400);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: $text-color; } 
+
+.caption{
+        @include flexCenter(flex);
+        width: 270px;
+        height: 42px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 40px;
+        text-align: center;   }  
+
+
+.userpic{
+        width: 450px;
+        height: auto;
+        // margin-left: auto;
+        // margin-right: auto;
+        padding-bottom: 30px;
+        background:$my-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px; 
+       
+    }
+
+
+  @media (min-width:768px){
+      .userpic{
+        width: 354px;
+            &:nth-child(2n){
+                margin-left: 15px;
+                   }
+            &:nth-child(2n+1){
+                margin-right: 15px;
+              }  
+          }
+       }
+
+       @media (max-width:769px){
+        .userpic{
+            width: auto; 
+            
+              &:nth-child(2n){
+                   margin-left: 0px;
+           }
+              &:nth-child(2n+1){
+                 margin-right: 0px;
+           }
+          } 
+       }
+@media  (min-width:1200px){
+      .userpic{
+        width: 270px; 
+        
+          &:nth-child(2n){
+               margin-left: 0px;
+       }
+          &:nth-child(2n+1){
+             margin-right: 0px;
+       }
+      }
+  }
+.userpic{      
+        background:$my-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;             }        
+        
+.social-are{
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin: 0px auto; 
+        }
+        
+.specialty{
+        width: 177px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 16px;
+        text-align: center;
+        color:$text-color;  } 
+.col{
+        width: 208px;
+        height: 19px;
+        margin-left: auto;
+        margin-right: auto;    
+        text-align: center;
+        color: $accent-text;     }
+.names{
+        width: 171px;
+        height: 19px;
+        margin: 0px auto;
+        text-align: center;
+        color: $accent-text;
+    
+   }
+        
+        
+        
+.pic{
+    width: 450px;
+        padding-bottom: 30px;    
+     }
+
+@media (min-width:768px){
+            .pic{
+                width: 354px;
+            }
+        }
+@media (min-width:1200px){
+    .pic{
+        width: 270px;
+    }
+}
+
+
+
+.link-instagram,.link-twitter,
+.link-facebook,.link-linkedin{
+    width: 20px;
+    height: 20px;  
+    border: 0px;
+    padding: 0px;           
+}
+
+.instagram,
+.twitter,
+.facebook,
+.linkedin:not(:last-child){
+    margin-right: 10px; 
+}
+
+.instagram,.twitter,.facebook,.linkedin
+{
+   @include flexCenter(flex);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);   
+    fill:$accent-link;   
+        &:hover,
+        &:focus{
+    outline: none;
+      fill: $my-color;
+      background-color: $accent-color;  
+   }
+}
+
+.commercial{     
+    background:$my-accent;
+    padding-bottom: 60px;
+    padding-top: 60px;         }
+@media (min-width: 1200px){
+    .commercial{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.commercial:not(:box-sizing){
+    @include flexCenter(flex);     
+    height: 648px;   
+    background: $my-accent;    } 
+
+
+
+
+.promo {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        width: auto;
+        margin: 0 auto;
+    }
+.userpic {
+        // flex: 0 1 calc(100% / 4 - 15px);
+        min-height: 100px;
+        margin-bottom: 30px;
+    
+        
+    }
+    @media (max-width: 1200px) {
+      .promo {
+            justify-content: space-around;
+        }  
+      .userpic {
+            flex: 0 1 calc(100% / 3 - 15px);
+        }
+    }
+    @media (max-width: 768px) {
+        .userpic {
+            flex: 0 1 calc(100% / 2 - 15px);
+        }
+    }
+    @media (max-width: 480px) {
+        .userpic {
+            flex: 0 1 100%;
+        }
+    }

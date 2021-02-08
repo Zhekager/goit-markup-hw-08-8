@@ -1,0 +1,176 @@
+
+  // меню телефона
+  .menu-button{
+    margin-right: 5px;
+        background-color: $my-color;
+        border: none;
+        &:hover,
+        &:focus{
+          fill: $accent-color;
+           
+        }
+    }
+@media (min-width:767px)  {
+.menu-button{
+        display: none;
+    }
+}
+
+
+
+.menu-button .icon-burger{
+    display: none;
+   
+}
+
+.menu-button.is-open .icon-burger{
+    display: block;
+}
+
+.menu-button.is-open .icon-close{
+    display: none;
+}
+
+.menu-button{
+   z-index: 2;
+}
+
+.block-menu{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 796px;
+    border: none;
+    background: $my-color;
+     display: none;
+     &.is-open{
+         
+        
+     display: block;
+     }
+     padding: 15px 15px 15px 40px;
+}
+@media (min-width:768px){
+    .block-menu{
+        &.is-open{
+            display: none;
+        }
+    }
+}
+
+
+
+.menu-stirring{
+    &:not(:last-child){
+         margin-bottom: 32px;
+    }
+   
+}
+
+.menu-stirring{
+    &:first-child{
+        margin-top: 33px;
+    }
+}
+
+.menu-stirring{
+    &:last-child{
+        margin-bottom: 250px;
+    }
+    
+}
+.menu-link{
+       @include fonts (500);
+    
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+
+      color: $accent-text;
+            &:hover,
+            &:focus{
+                color: $accent-color
+            }
+    }
+
+.reachTelephone{
+    @include fonts (500);
+     font-size: 34px;
+     line-height: 40px;
+     outline: none;
+
+     letter-spacing: 0.02em;
+
+     color: $accent-color;  
+     }
+
+.reachEmail{
+    @include fonts (500);
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: 0.02em;
+   cursor: pointer;
+   color: $text-color; 
+   }
+.text-Instagram,
+.text-Twitter,
+.text-Facebook,
+.text-LinkedIn{
+    @include fonts (500);
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    color: $accent-color;
+}
+
+
+
+.menu-Instagram,
+.menu-Twitter,
+.menu-Facebook,
+.menu-LinkedIn{ 
+    display: inline-flex; 
+    
+// transform: rotate(90deg);
+ }
+
+.menu-Instagram{
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    height: 22px;  
+}
+.menu-Twitter{
+    padding-left: 7px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    height: 22px; 
+}
+.menu-Facebook{
+    padding-left: 7px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    height: 22px; 
+}
+.menu-LinkedIn{
+    padding-left: 7px;
+    
+    height: 22px; 
+}
+
+.menu-phone{
+   
+        margin-bottom: 32px;
+    
+}
+.menu-reach{
+    margin-bottom: 64px;
+}
+
+.menuSocial{
+   
+        margin-bottom: 32px;
+    
+}
+

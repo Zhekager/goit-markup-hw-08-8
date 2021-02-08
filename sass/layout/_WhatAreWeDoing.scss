@@ -1,0 +1,47 @@
+/* чем мы занимаемся */
+
+.subtitle{
+    flex-direction: column;
+    width: 380px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    text-align: center;  }
+.bowl{  
+    display: none; 
+    padding-bottom: 94px;     }
+
+@media ( min-width:1200px){
+    .bowl{
+        display: unset;
+    }
+}    
+.wrapper{      
+    display: flex;
+    justify-content: space-between;         }
+.thumb{
+    padding-left: 0;  }  
+
+.label{
+    @include fonts(700);
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $my-color;     }
+.label{
+    position: absolute;
+    width: 205px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   }
+.thumb-desktop{
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 4px;
+    background: rgba(47, 48, 58, 0.8);    }
+.wrapper{
+    position: relative;       }  

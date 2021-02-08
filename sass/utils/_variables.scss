@@ -1,0 +1,62 @@
+$ghost-color: #EEEEEE;
+$accent-link:#AFB1B8;
+$my-accent:#F5F4FA;
+$back-color: #2F303A;
+$text-color: #757575;
+$accent-text:#212121;
+$my-color:#ffffff;
+$accent-color: #2196F3;
+
+body {
+    position: relative;
+    background: $my-color;
+    font-style: normal;
+    line-height: normal;
+    border: none;
+    box-sizing: unset;
+    @media (min-width: 768px) {
+        padding-top: 80px;
+        
+    } 
+     }
+     body::-webkit-scrollbar { width: 0; }
+
+h1,h2,h3,h4{
+   font-family: roboto, sans-serif;
+   font-weight: 700-bold; }
+body,h1,h2,h3,h4,ul,li,p{
+   margin: 0px;    } 
+li{
+    list-style: none; }
+a{
+    text-decoration: none; }
+ul{
+    padding-inline-start: 0px;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+    padding: 0px;      } 
+.container{
+    // position: relative;
+        max-width: 1200px;
+        height: auto;
+        margin: 0px auto;     
+        padding: 0px 15px;
+      } 
+ @media (max-width:1200px) {
+     .container{
+         max-width: 768px;
+         position: relative;
+     }
+ }
+ @media (max-width: 768px) {
+    .container{
+        position: static;
+        max-width: 480px;
+ } 
+   } 
+   @media (max-width: 500px) {
+    .container{
+       position: static;
+        max-width: none;
+ } 
+   }   

@@ -1,0 +1,112 @@
+/* клиент  */
+
+.figure{
+    width: auto;
+    height: auto;
+    margin: 0px auto;
+    padding-top: 60px;
+    padding-bottom: 97px;    
+} 
+@media (min-width:1200px){
+    .figure{
+        padding-top: 94px;
+    }
+} 
+
+// .indent:nth-child(1n){  
+//     margin-right: 15px;   
+// }
+
+.figure-client{
+    @include fonts(700);
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    width: auto;
+    height: auto;      
+    padding-bottom: 15px;
+    text-decoration-color:$accent-text;   
+}
+
+
+.link-client{ 
+    @include flexCenter(flex);
+    width: 200px;
+    height: 90px;
+    border: 1px solid $accent-link;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill:$accent-link;    
+        &:hover,
+        &:focus{
+            outline: none;
+            color: $accent-color; 
+            border-color: $accent-color;
+            fill: $accent-color;  
+          }  
+        }
+        @media (min-width:768px){
+            .link-client{
+                margin-left: 10px;
+                margin-right: 10px;
+              width: 226px;
+               
+            }
+        }
+ @media (min-width:1200px){
+     .link-client{
+         width: 170px;
+         margin: 0px 15px;
+     }
+ }        
+
+
+.link-client{
+   
+       margin-top: 15px;
+       margin-bottom: 15px;
+         } 
+@media (max-width:1200px){
+    .client {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;}
+
+
+    // max-width: 1200px;
+    // margin: 0 auto;
+}
+.client {
+    display: flex;
+    justify-content: center;
+}
+
+.link-client {
+    flex: 0 1 calc(100% / 4 - 15px);
+    min-height: 90px;
+   
+  
+
+}
+
+
+
+@media (max-width: 1200px) {
+  .client {
+        justify-content: space-around;
+    }  
+  .link-client {
+        flex: 0 1 calc(100% / 3 - 15px);
+    }
+}
+@media (max-width: 768) {
+    .link-client {
+        flex: 0 1 calc(100% / 2 - 15px);
+    }
+}
+@media (max-width: 480px) {
+    .link-client {
+        flex: 0 1 100%;
+    }
+}     

@@ -1,0 +1,197 @@
+/*портфолио*/
+.title{
+    @include fonts(700);
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color:$accent-text;  }
+
+
+.desc{
+    @include fonts(400);
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: $text-color;  }
+
+    .stirring{
+        margin-right: 50px;      }
+
+    .spreadsheet{ 
+        width: auto;
+        height: auto;
+             }
+@media (min-width:1200px){
+    .spreadsheet{
+        width: 1200px;
+        height: 1300px;
+    }
+}
+
+    .spreadsheet {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    padding-top: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    @media (min-width:1200px){
+        .spreadsheet{
+            justify-content: center;
+        }
+    }
+
+    
+
+    .ticket {
+        // flex: 0 1 calc(100% / 4 - 15px);
+        min-height: 100px;
+        margin-bottom: 20px;
+    &:last-child{        
+        padding-right: 374px;  }
+       
+    }
+  
+    @media (max-width:768px){
+        .ticket{
+            &:last-child{        
+                padding-right: 374px;  }
+               
+            }
+        }
+
+
+
+    @media (min-width:1200px){
+        .ticket{
+            margin: 10px;
+        &:last-child{
+            padding: 0px;
+        }
+    }
+    }
+
+    .ticket{ 
+        width: auto;
+        height: 404px;        }
+    @media (max-width: 1200px) {
+        .spreadsheet {
+            justify-content: space-around;
+        }  
+        .ticket {
+            flex: 0 1 calc(100% / 3 - 15px);
+        }
+    }
+    @media (max-width: 768px) {
+        .ticket {
+            flex: 0 1 calc(100% / 2 - 15px);
+        }
+    }
+    @media (max-width: 480px) {
+        .ticket {
+            flex: 0 1 100%;
+        }
+    }
+
+.animation-technocryk{
+    padding: 63px 24px;      }
+.technocryk{
+    @include fonts(400);
+    font-size: 18px;
+    line-height: 28px; 
+    letter-spacing: 0.03em;
+    color: $my-color;    }
+
+
+.photo{
+    position: relative;
+    overflow: hidden;   }
+
+
+.current-link,
+.current-link.link::after,
+.link:hover:after,
+.current-link,
+.current-link.link::after,
+ .link:focus:after{
+    color:$accent-color;
+    opacity: 1;  } 
+                
+.link::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -0.5px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background: $accent-color;
+    border-radius: 2px;
+    opacity: 0; 
+    transition: opacity 250ms linear;  }  
+    
+.link{
+        padding-top: 32px;
+        padding-bottom: 32px;
+        transition:color  250ms linear;}
+.link{
+        position: relative;    }
+
+.internal-block{     
+        padding:20px 15px;  }
+
+.coloring{
+        padding-bottom: 79px;
+        padding-top: 60px;  }
+        @media (min-width:1200px) {
+            .coloring{
+                padding-bottom: 94px;}
+            }
+
+
+.ghost{
+    width: 355px;
+    display: block;
+    border: 1px solid #EEEEEE; 
+      &:hover,
+      &:focus{
+        outline: none;
+        background: $my-color;
+        border: 1px solid $ghost-color;
+        display: block;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+         0px 4px 4px rgba(0, 0, 0, 0.06),
+          1px 4px 6px rgba(0, 0, 0, 0.16)   
+ 
+        }
+             &:hover .animation-technocryk,
+             &:focus .animation-technocryk
+              {
+                 transform: translateY(0);   
+ }
+}
+              
+
+    // анимации
+
+.contacts{
+        transition-property: background-color,color ;
+        transition-duration: 250ms;
+        transition-timing-function: linear; }
+.instagram,.twitter,.facebook,.linkedin{
+        @include transform;       }
+.link-client,.instagram-connexion,.twitter-connexion,
+.facebook-connexion,.linkedin-connexion,.link-mailto,.link-tel{
+       @include transform;       }
+       
+.photo .animation-technocryk{
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width: 100%;
+     height: 100%;
+     background: rgba(33, 150, 243, 0.9);
+     transform: translateY(100%);
+     transition: transform 250ms linear;    
+     }

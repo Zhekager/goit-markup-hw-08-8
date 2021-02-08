@@ -1,0 +1,21 @@
+@mixin flexCenter($type){
+    display: $type;
+    align-items: center;
+    justify-content: center;   
+}
+@mixin transform {
+   transition-property: background-color,fill, border-color;
+   transition-duration: 250ms;
+   transition-timing-function: linear;
+}
+@mixin fonts ($type){
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: $type;
+  
+}
+@mixin transformSocial {
+   transition-property: background-color,fill ;
+   transition-duration: 250ms;
+   transition-timing-function: linear;
+}
