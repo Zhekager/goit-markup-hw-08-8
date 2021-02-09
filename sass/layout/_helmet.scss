@@ -72,13 +72,19 @@
            
 .heading{
 
-        width: 360px;
+        width: auto;
         height: auto;
         margin: 0px auto;
         padding-bottom: 30px;
         text-align: center;
         text-transform: uppercase;        }
 
+
+@media (min-width:768px){
+            .heading{
+               width: 360px; 
+            }
+        } 
  @media (min-width:1200px){
      .heading{
         width: 696px; 

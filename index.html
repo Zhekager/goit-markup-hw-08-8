@@ -154,15 +154,17 @@
 
     </section> 
     <!--Наша команда-->
-    <!-- Игорь Демьяненко -->
+    
     <section class="commercial">
       <div class="container" > 
        <h2 class="caption">Наша команда</h2>
         <ul class="promo">
           <li class="userpic" >
+            <!-- Игорь Демьяненко -->
               <img class="pic" src="./images-new/ProductDesigner.jpg"
                alt="фотография сотрудника 1" 
-               srcset="ProductDesigner@2x.jpg 2x">
+               srcset="ProductDesigner@2x.jpg 2x
+                       ProductDesigner@3x.jpg 3x">
               <h3 class="col">Игорь Демьяненко</h3>
               <p class="specialty" >Product Designer</p>
               <ul class="social-are">
@@ -202,7 +204,8 @@
                <img class="pic"
                 src="./images-new/FrontendDeveloper.jpg" 
                                                         alt="фотография сотрудника 2" 
-                srcset="FrontendDeveloper@2x.jpg 2x">
+                srcset="FrontendDeveloper@2x.jpg 2x
+                        FrontendDeveloper@3x.jpg 3x">
                <h3 class="names">Ольга Репина</h3>
                <p class="specialty">Frontend Developer</p>
                <ul class="social-are">
@@ -240,7 +243,8 @@
              <li class="userpic">
                <img class="pic" src="./images-new/Marketing.jpg" 
                                                                alt="фотография сотрудника 3"
-                            srcset="Marketing@2x.jpg 2x">
+                            srcset="Marketing@2x.jpg 2x
+                                    Marketing@3x.jpg 3x">
                <h3 class="names">Николай Тарасов</h3>
                <p class="specialty">Marketing</p>
                <ul class="social-are">
@@ -278,7 +282,9 @@
              <li class="userpic">
                  <img class="pic" src="./images-new/UIDesigner.jpg" 
                                                                  alt="фотография сотрудника 3"
-                        srcset="UIDesigner@2x.jpg 2x">
+                        srcset="UIDesigner@2x.jpg 2x
+                                UIDesigner@3x.jpg 3x">
+
                  <h3 class="names">Михаил Ермаков</h3>
                  <p class="specialty">UI Designer</p>
                  <ul class="social-are">
@@ -385,13 +391,15 @@
         <nav class="basement">
 
          
-        <ul class="adress">
-          <li> <a class="logo-footer" href="index.html"> 
+        <ul >
+          <!-- class="adress" -->
+          <li class="logo-footer"> <a  href="index.html"> 
           <span style="color:#2196F3">Web</span><span style="color: #ffffff;">Studio</span>
-          </a></li>
-            <li class="adds" >г. Киев, пр-т Леси Украинки, 26</li>
-            <li><a class="aside-mailto" href="mailto:info@example.com">info@example.com</a></li>
-            <li><a class="aside-tel" href="tel:+38-099-111-11-11">+38 099 111 11 11</a></li>
+          </a>
+        </li>
+            <li class="aside-adds" >г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="aside-mailto"><a class="aside-text" href="mailto:info@example.com">info@example.com</a></li>
+            <li class="aside-tel"><a class="aside-text" href="tel:+38-099-111-11-11">+38 099 111 11 11</a></li>
         </ul>
       </nav>
          <div class="connexion">
@@ -435,7 +443,7 @@
         <img class="undersign" src="./images/icon-send-new.svg" alt="Подписаться">
       </button>
       </form>
-      </div> 
+      
       <div class="backdrop is-hidden" data-modal >
       <div class="window">
       <button class="close-black" data-modal-close >
@@ -500,7 +508,11 @@
     </form>
   </div>
 </div>
+</div> 
 </footer>
+<div>
+
+</div>
 <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>

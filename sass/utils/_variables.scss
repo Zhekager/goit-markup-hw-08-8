@@ -39,7 +39,8 @@ ul{
     // position: relative;
         max-width: 1200px;
         height: auto;
-        margin: 0px auto;     
+        margin-left: auto; 
+        margin-right: auto;    
         padding: 0px 15px;
       } 
  @media (max-width:1200px) {
@@ -51,7 +52,7 @@ ul{
  @media (max-width: 768px) {
     .container{
         position: static;
-        max-width: 480px;
+        // max-width: 480px;
  } 
    } 
    @media (max-width: 500px) {

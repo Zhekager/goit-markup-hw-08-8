@@ -28,7 +28,7 @@
 
 .caption{
         @include flexCenter(flex);
-        width: 270px;
+        // width: 270px;
         height: 42px;
         margin-left: auto;
         margin-right: auto;
@@ -130,18 +130,18 @@
         
         
 .pic{
-    width: 450px;
+    width: 100%;
         padding-bottom: 30px;    
      }
 
 @media (min-width:768px){
             .pic{
-                width: 354px;
+                width: 100%;
             }
         }
 @media (min-width:1200px){
     .pic{
-        width: 270px;
+        width: 100%;
     }
 }
 
@@ -216,9 +216,9 @@
       .promo {
             justify-content: space-around;
         }  
-      .userpic {
-            flex: 0 1 calc(100% / 3 - 15px);
-        }
+    //   .userpic {
+    //         flex: 0 1 calc(100% / 3 - 15px);
+    //     }
     }
     @media (max-width: 768px) {
         .userpic {

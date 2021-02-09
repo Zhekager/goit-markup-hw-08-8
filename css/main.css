@@ -49,7 +49,8 @@ ul {
 .container {
   max-width: 1200px;
   height: auto;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px 15px;
 }
 
@@ -63,7 +64,6 @@ ul {
 @media (max-width: 768px) {
   .container {
     position: static;
-    max-width: 480px;
   }
 }
 
@@ -777,12 +777,18 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 }
 
 .heading {
-  width: 360px;
+  width: auto;
   height: auto;
   margin: 0px auto;
   padding-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    width: 360px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -953,7 +959,7 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 .vektor-clock,
 .vektor-diagram,
 .vektor-astronaut {
-  width: 450px;
+  width: auto;
   height: 120px;
   background: #F5F4FA;
   background-position: center;
@@ -1110,7 +1116,6 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
   height: 42px;
   margin-left: auto;
   margin-right: auto;
@@ -1214,19 +1219,19 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 }
 
 .pic {
-  width: 450px;
+  width: 100%;
   padding-bottom: 30px;
 }
 
 @media (min-width: 768px) {
   .pic {
-    width: 354px;
+    width: 100%;
   }
 }
 
 @media (min-width: 1200px) {
   .pic {
-    width: 270px;
+    width: 100%;
   }
 }
 
@@ -1317,11 +1322,6 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   .promo {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-  .userpic {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 calc(100% / 3 - 15px);
-            flex: 0 1 calc(100% / 3 - 15px);
   }
 }
 
@@ -1649,7 +1649,7 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 @media (min-width: 1200px) {
   .logo-footer {
     width: 145px;
-    margin-top: 50px;
+    margin-top: 0px;
     display: unset;
     -webkit-box-align: unset;
         -ms-flex-align: unset;
@@ -1703,9 +1703,6 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 @media (min-width: 1200px) {
   .adress {
     height: 240px;
-    position: absolute;
-    left: 15px;
-    top: 60px;
   }
 }
 
@@ -1726,17 +1723,22 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 
 @media (min-width: 1200px) {
   .adv {
-    position: relative;
     padding-top: 60px;
-    padding-bottom: 60px;
-    height: 252px;
-    width: 100%;
+    height: 256px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .adv > .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1762,7 +1764,7 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   margin: 0px auto;
 }
 
-.adds {
+.aside-adds {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1772,20 +1774,14 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 9px;
   color: #ffffff;
-}
-
-@media (min-width: 1200px) {
-  .adds {
-    -webkit-box-align: flex;
-        -ms-flex-align: flex;
-            align-items: flex;
-  }
 }
 
 .aside-mailto,
 .aside-tel {
+  height: 21px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1796,35 +1792,12 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
       -ms-flex-pack: center;
           justify-content: center;
   height: auto;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.aside-mailto:hover, .aside-mailto:focus,
-.aside-tel:hover,
-.aside-tel:focus {
-  color: #2196F3;
-}
-
-@media (min-width: 768px) {
-  .aside-mailto,
-  .aside-tel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
 }
 
 @media (min-width: 1200px) {
   .aside-mailto,
   .aside-tel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     -webkit-box-align: unset;
         -ms-flex-align: unset;
             align-items: unset;
@@ -1835,43 +1808,70 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 }
 
 .aside-mailto {
-  padding-bottom: 9px;
-  padding-top: 9px;
+  margin-bottom: 9px;
+}
+
+.aside-text {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.aside-text:hover, .aside-text:focus {
+  color: #2196F3;
 }
 
 .basement {
-  width: auto;
-  height: auto;
+  width: 232px;
+  height: 127px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (min-width: 768px) {
   .basement {
+    position: absolute;
+    margin: 0px auto;
     width: 231px;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 127px;
+    display: block;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 @media (min-width: 1200px) {
   .basement {
-    height: 81px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    position: static;
+    margin: 0px;
+    width: 231px;
+    height: 132px;
+    display: unset;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
   }
 }
 
 .connexion {
   width: 206px;
-  height: 127px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
@@ -1889,14 +1889,13 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 
 @media (min-width: 1200px) {
   .connexion {
-    position: absolute;
-    right: 700px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    height: auto;
+    width: 206px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    position: unset;
   }
 }
 
@@ -1933,13 +1932,19 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 
 @media (min-width: 1200px) {
   .email-input {
-    margin-top: 20px;
-    width: 358px;
     display: unset;
     -webkit-box-align: unset;
         -ms-flex-align: unset;
             align-items: unset;
-    display: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    margin-top: 20px;
+    width: 358px;
   }
 }
 
@@ -1984,10 +1989,15 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 .subscribe {
   width: 200px;
   height: 50px;
-  right: 0px;
-  bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
   cursor: pointer;
   padding: 10px 29px;
   background: #2196F3;
@@ -2000,24 +2010,29 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 @media (min-width: 1200px) {
   .subscribe {
     position: absolute;
-    margin-left: 0px;
-    margin-right: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 35px;
+    left: 380px;
+    margin: 0px;
+    width: 200px;
+    height: 50px;
     right: 0px;
     bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .subscribe {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   font-family: Roboto;
@@ -2033,11 +2048,19 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   height: auto;
 }
 
+@media (min-width: 768px) {
+  .email-form {
+    position: relative;
+    top: 200px;
+    width: auto;
+    height: 106px;
+  }
+}
+
 @media (min-width: 1200px) {
   .email-form {
-    position: absolute;
-    top: 60px;
-    right: 15px;
+    position: relative;
+    top: auto;
     width: 570px;
     height: 106px;
   }
@@ -2068,7 +2091,8 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 @media (min-width: 1200px) {
   .container-text {
     padding-top: 0px;
-    display: unset;
+    padding-bottom: 0px;
+    display: block;
     -webkit-box-align: unset;
         -ms-flex-align: unset;
             align-items: unset;
