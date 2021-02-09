@@ -23,39 +23,41 @@
          line-height: 60px;
 } 
  }       
-.helmet{ 
-    width: auto;
-    height: 400px;
-        background: linear-gradient(
-                   to right, rgba(47, 48, 58, 0.4), 
-                   rgba(47, 48, 58, 0.4)),
-                   url(../images-new/Header-mobile-img@2x.png);
-        background-repeat: no-repeat; 
+// .helmet{ 
+//     width: auto;
+//     height: 400px;
+//         background: linear-gradient(
+//                    to right, rgba(47, 48, 58, 0.4), 
+//                    rgba(47, 48, 58, 0.4)),
+//                    url(../../images-new/Header-mobile-img.png);
+//         background-repeat: no-repeat; 
+//         background-position: center;
+//         background-size: cover; 
+//         padding-top: 120px;
+//         padding-bottom: 118px;
+            
+//            }
+
+           .helmet {
+            width: auto;
+            height: 400px;
+            background-image: url(../images-new/Header-mobile-img.png);
+            background-repeat: no-repeat; 
         background-position: center;
         background-size: cover; 
         padding-top: 120px;
         padding-bottom: 118px;
-            
-           }
-
-
-
- @media (min-width:768px){
-    .helmet{ 
-        width: auto;
-         height: 400px;
-//             background: linear-gradient(
-//                        to right, rgba(47, 48, 58, 0.4), 
-//                        rgba(47, 48, 58, 0.4)),
-//                        url(../../images-new/Header-mobile-img@2x.png);
-//             background-repeat: no-repeat; 
-//             background-position: center;
-//             background-size: cover; 
-             padding-top: 108px;
-            padding-bottom: 118px;
-                
-              }
-       }
+          }
+          
+          @media screen and (min-device-pixel-ratio: 2),
+            screen and (-webkit-min-device-pixel-ratio: 2),
+            screen and (-o-min-device-pixel-ratio: 2/1),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            .helmet {
+              background-image: url('Header-mobile-img@2x.png');
+            }
+          }
 
       @media (min-width:768px){
         .helmet{
