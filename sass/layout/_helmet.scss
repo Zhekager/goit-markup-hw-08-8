@@ -41,7 +41,11 @@
            .helmet {
             width: auto;
             height: 400px;
-            background-image: url(../images-new/Header-mobile-img.png);
+            background-image:
+            linear-gradient(
+                                    to right, rgba(47, 48, 58, 0.4), 
+                                    rgba(47, 48, 58, 0.4)),
+            url(../images-new/Header-mobile-img@2x.png);
             background-repeat: no-repeat; 
         background-position: center;
         background-size: cover; 
@@ -55,7 +59,7 @@
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
             .helmet {
-              background-image: url('Header-mobile-img@2x.png');
+              background-image: url('Header-mobile-img.png');
             }
           }
 
