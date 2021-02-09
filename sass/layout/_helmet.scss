@@ -23,32 +23,9 @@
          line-height: 60px;
 } 
  }       
-// .helmet{ 
-//     width: auto;
-//     height: 400px;
-//         background: linear-gradient(
-//                    to right, rgba(47, 48, 58, 0.4), 
-//                    rgba(47, 48, 58, 0.4)),
-//                    url(../../images-new/Header-mobile-img.png);
-//         background-repeat: no-repeat; 
-//         background-position: center;
-//         background-size: cover; 
-//         padding-top: 120px;
-//         padding-bottom: 118px;
-            
-//            }
-
 .helmet{ 
     width: auto;
     height: 400px;
-        background: -webkit-gradient(
-                   linear, left top, right top, from(rgba(47, 48, 58, 0.4)), 
-                   to(rgba(47, 48, 58, 0.4))),
-                   url(../../images-new/Header-mobile-img.png);
-        background: -o-linear-gradient(
-                   left, rgba(47, 48, 58, 0.4), 
-                   rgba(47, 48, 58, 0.4)),
-                   url(../../images-new/Header-mobile-img.png);
         background: linear-gradient(
                    to right, rgba(47, 48, 58, 0.4), 
                    rgba(47, 48, 58, 0.4)),
@@ -61,51 +38,23 @@
             
            }
 
-        
-         
-       
 
-           @media (min-width:768px){
-            .helmet{ 
-                width: auto;
-                height: 400px;
-                    background: -webkit-gradient(
-                               linear, left top, right top, from(rgba(47, 48, 58, 0.4)), 
-                               to(rgba(47, 48, 58, 0.4))),
-                               url(../../images-new/Header-mobile-img@2x.png);
-                    background: -o-linear-gradient(
-                               left, rgba(47, 48, 58, 0.4), 
-                               rgba(47, 48, 58, 0.4)),
-                               url(../../images-new/Header-mobile-img@2x.png);
-                    background: linear-gradient(
-                               to right, rgba(47, 48, 58, 0.4), 
-                               rgba(47, 48, 58, 0.4)),
-                               url(../../images-new/Header-mobile-img@2x.png);
-                    background-repeat: no-repeat; 
-                    background-position: center;
-                    background-size: cover; 
-                    padding-top: 108px;
-                    padding-bottom: 118px;
-                        
-                       }
-              }      
-
-// @media (min-width:768px){
-//     .helmet{ 
-//         width: auto;
-//         height: 400px;
-//             background: linear-gradient(
-//                        to right, rgba(47, 48, 58, 0.4), 
-//                        rgba(47, 48, 58, 0.4)),
-//                        url(../../images-new/Header-mobile-img@2x.png);
-//             background-repeat: no-repeat; 
-//             background-position: center;
-//             background-size: cover; 
-//             padding-top: 108px;
-//             padding-bottom: 118px;
+@media (min-width:768px){
+    .helmet{ 
+        width: auto;
+        height: 400px;
+            background: linear-gradient(
+                       to right, rgba(47, 48, 58, 0.4), 
+                       rgba(47, 48, 58, 0.4)),
+                       url(../../images-new/Header-mobile-img@2x.png);
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-size: cover; 
+            padding-top: 108px;
+            padding-bottom: 118px;
                 
-//                }
-//       }
+               }
+      }
 
       @media (min-width:768px){
         .helmet{
