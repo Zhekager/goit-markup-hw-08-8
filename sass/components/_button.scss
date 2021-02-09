@@ -51,7 +51,7 @@ $accent-color: #2196F3;
     @include flexCenter(flex);
     letter-spacing: 0.06em;    }
 .group{
-      height: 91px;
+      height: auto;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
@@ -81,10 +81,8 @@ $accent-color: #2196F3;
            }
        }
 .stud{
-        margin: 0px 8px;
-    &:nth-last-child(-n+2){
-        margin-top: 15px;
-        }       
+        margin: 8px 8px;
+           
      } 
 
   @media (min-width:768px){

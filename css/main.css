@@ -743,7 +743,7 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 148px;
+  padding-top: 120px;
   padding-bottom: 118px;
 }
 
@@ -989,19 +989,19 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 }
 
 .vektor-antenna {
-  background-image: url(../svg/antenna.svg);
+  background-image: url(../svg-new/antenna.svg);
 }
 
 .vektor-clock {
-  background-image: url(../svg/clock.svg);
+  background-image: url(../svg-new/clock.svg);
 }
 
 .vektor-diagram {
-  background-image: url(../svg/diagram.svg);
+  background-image: url(../svg-new/diagram.svg);
 }
 
 .vektor-astronaut {
-  background-image: url(../svg/astronaut.svg);
+  background-image: url(../svg-new/astronaut.svg);
 }
 
 /* чем мы занимаемся */
@@ -1389,7 +1389,7 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 }
 
 .group {
-  height: 91px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1429,11 +1429,7 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 }
 
 .stud {
-  margin: 0px 8px;
-}
-
-.stud:nth-last-child(-n+2) {
-  margin-top: 15px;
+  margin: 8px 8px;
 }
 
 @media (min-width: 768px) {
@@ -1554,8 +1550,13 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 }
 
 .link-client {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .link-client {
+    margin: 10px 10px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1587,7 +1588,7 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   min-height: 90px;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .client {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -1725,6 +1726,9 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   .adv {
     padding-top: 60px;
     height: 256px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -2127,10 +2131,6 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   color: #757575;
 }
 
-.stirring {
-  margin-right: 50px;
-}
-
 .spreadsheet {
   width: auto;
   height: auto;
@@ -2143,13 +2143,13 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   }
 }
 
-.spreadsheet {
+.spreadsheet:nth-child(-n+8) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 30px;
@@ -2157,27 +2157,38 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .spreadsheet:nth-child(-n+8) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media (min-width: 1200px) {
-  .spreadsheet {
+  .spreadsheet:nth-child(-n+8) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
+.card {
+  width: auto;
+}
+
 .ticket {
+  height: 404px;
   min-height: 100px;
   margin-bottom: 20px;
-}
-
-.ticket:last-child {
-  padding-right: 374px;
-}
-
-@media (max-width: 768px) {
-  .ticket:last-child {
-    padding-right: 374px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -2191,7 +2202,7 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 
 .ticket {
   width: auto;
-  height: 404px;
+  height: auto;
 }
 
 @media (max-width: 1200px) {
@@ -2211,14 +2222,6 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 calc(100% / 2 - 15px);
             flex: 0 1 calc(100% / 2 - 15px);
-  }
-}
-
-@media (max-width: 480px) {
-  .ticket {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
   }
 }
 
@@ -2282,6 +2285,7 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 }
 
 .coloring {
+  width: 100%;
   padding-bottom: 79px;
   padding-top: 60px;
 }
@@ -2293,7 +2297,7 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 }
 
 .ghost {
-  width: 355px;
+  width: 100%;
   display: block;
   border: 1px solid #EEEEEE;
 }

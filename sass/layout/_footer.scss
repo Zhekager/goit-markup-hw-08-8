@@ -69,9 +69,7 @@
 @media (min-width:1200px){
     .adress{
         height: 240px;
-        // position: absolute;
-        // left: 190px;
-        // top: 60px;
+      
     }
 }
     
@@ -93,13 +91,11 @@
   } 
 @media (min-width:1200px){
       .adv{
-        //   position: relative;
+       
           padding-top: 60px;
-        //   padding-bottom: 60px;
+        
           height: 256px;
-        //   width: 100%;
-        //   display: flex;
-        //   align-items: center;
+       align-items: center;
       }
   } 
   @media(min-width: 1200px) {
@@ -133,14 +129,6 @@
     margin-top: 20px; 
     margin-bottom: 9px;    
     color: $my-color;    }
-// @media (min-width:1200px){
-//         .aside-adds{
-//             display: flex;
-//          justify-content: unset;
-//            align-items: flex; 
-           
-//         }
-    //}
 
 .aside-mailto,
 .aside-tel{
@@ -150,16 +138,7 @@
     height: auto;
     
     }
-
-
-// @media (min-width:768px){
-//     .aside-mailto,
-//         .aside-tel{
-//           display: flex;
-//           justify-content: space-around;  
-//         }
-//     }
-    
+  
 @media (min-width:1200px){
         .aside-mailto,
         .aside-tel{
@@ -170,9 +149,9 @@
     }
     
 .aside-mailto{
-    // height: 21px;
+    
     margin-bottom: 9px;
-    // margin-top: 9px;        
+          
  }
 
  .aside-text{
@@ -237,7 +216,7 @@
             right: 15px;
         }
     }
-     @media (min-width:1200px){
+@media (min-width:1200px){
         .connexion{
         height: auto;
         width: 206px;
@@ -273,7 +252,7 @@
           @include flexCenter(flex);
       }
   }
-  @media (min-width:1200px){
+@media (min-width:1200px){
       .email-input{
        display: unset;
        align-items: unset;
@@ -322,8 +301,7 @@
 .subscribe { 
     width: 200px;
     height: 50px;
-    // right: 0px;
-    // bottom: 15px;
+    
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -371,7 +349,7 @@
     width: auto;
     height: auto;    }
 
-    @media (min-width:768px){
+@media (min-width:768px){
         .email-form{
             position: relative;
             top: 200px;
@@ -380,7 +358,7 @@
             
         }
     }
-    @media (min-width:1200px){
+@media (min-width:1200px){
         .email-form{
             position: relative;
             top: auto;
