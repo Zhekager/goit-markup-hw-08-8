@@ -738,8 +738,8 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 .helmet {
   width: auto;
   height: 400px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images-new/Header-mobile-img@2x.png);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-new/Header-mobile-img@2x.png);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images-new/Header-mobile-img.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-new/Header-mobile-img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -747,15 +747,37 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   padding-bottom: 118px;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media (min-width: 1200px) {
   .helmet {
-    background-image: url("Header-mobile-img.png");
+    width: auto;
+    height: 600px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images-new/Header-mobile-img@2x.png);
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-new/Header-mobile-img@2x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 118px;
   }
 }
 
 @media (min-width: 768px) {
   .helmet {
     padding-top: 108px;
+    padding-bottom: 118px;
+  }
+}
+
+@media (min-width: 768px) {
+  .helmet {
+    width: auto;
+    height: 400px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images-new/Header-mobile-img@2x.png);
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-new/Header-mobile-img@2x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 120px;
     padding-bottom: 118px;
   }
 }
