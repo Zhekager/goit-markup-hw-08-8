@@ -738,8 +738,8 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 .helmet {
   width: auto;
   height: 400px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images-new/Header-mobile-img.png);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-new/Header-mobile-img.png);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images-new/Header-mobile-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-new/Header-mobile-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -751,8 +751,8 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   .helmet {
     width: auto;
     height: 600px;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images-new/Header-mobile-img@2x.png);
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-new/Header-mobile-img@2x.png);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images-new/Header-mobile-img@2x.jpg);
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-new/Header-mobile-img@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -772,8 +772,8 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   .helmet {
     width: auto;
     height: 400px;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images-new/Header-mobile-img@2x.png);
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-new/Header-mobile-img@2x.png);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images-new/Header-mobile-img@2x.jpg);
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images-new/Header-mobile-img@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
