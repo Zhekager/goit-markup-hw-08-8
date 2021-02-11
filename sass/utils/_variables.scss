@@ -19,11 +19,11 @@ body {
         
     } 
      }
-     body::-webkit-scrollbar { width: 0; }
+body::-webkit-scrollbar { width: 0; }
 
 h1,h2,h3,h4{
-   font-family: roboto, sans-serif;
-   font-weight: 700-bold; }
+     font-family: roboto, sans-serif;
+     font-weight: 700-bold; }
 body,h1,h2,h3,h4,ul,li,p{
    margin: 0px;    } 
 li{
@@ -36,7 +36,7 @@ ul{
     margin-block-start: 0em;
     padding: 0px;      } 
 .container{
-    // position: relative;
+    
         max-width: 1200px;
         height: auto;
         margin-left: auto; 
@@ -52,7 +52,7 @@ ul{
  @media (max-width: 768px) {
     .container{
         position: static;
-        // max-width: 480px;
+        
  } 
    } 
    @media (max-width: 500px) {

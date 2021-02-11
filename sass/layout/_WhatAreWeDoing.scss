@@ -10,13 +10,21 @@
     text-align: center;  }
 .bowl{  
     display: none; 
-    padding-bottom: 94px;     }
+         }
 
 @media ( min-width:1200px){
     .bowl{
         display: unset;
+        padding-bottom: 94px;
     }
-}    
+} 
+
+@media (min-width:1200px){
+    .bowl >.container{
+        padding-bottom: 94px;
+    }
+}
+
 .wrapper{      
     display: flex;
     justify-content: space-between;         }

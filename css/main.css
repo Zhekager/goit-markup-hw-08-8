@@ -157,7 +157,7 @@ header {
 }
 
 .menu-nav {
-  margin-right: 70px;
+  margin-right: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,6 +167,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .menu-nav {
+    margin-right: 70px;
+  }
 }
 
 .menu-nav {
@@ -184,7 +190,7 @@ header {
   display: flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navigation {
     display: none;
   }
@@ -220,7 +226,7 @@ header {
   margin-left: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .menu-nav-contacts {
     display: none;
   }
@@ -1034,12 +1040,18 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
 
 .bowl {
   display: none;
-  padding-bottom: 94px;
 }
 
 @media (min-width: 1200px) {
   .bowl {
     display: unset;
+    padding-bottom: 94px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bowl > .container {
+    padding-bottom: 94px;
   }
 }
 
@@ -1135,6 +1147,13 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   margin-right: auto;
   padding-bottom: 40px;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .caption {
+    height: unset;
+    padding-bottom: 50px;
+  }
 }
 
 .userpic {
@@ -1412,11 +1431,12 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 
 @media (min-width: 768px) {
   .group {
-    margin-left: 50px;
+    margin-left: 40px;
     height: auto;
     padding-bottom: 30px;
   }
@@ -1436,7 +1456,7 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
     width: auto;
     height: auto;
     margin-left: 0px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     padding-left: 240px;
     padding-right: 240px;
   }
@@ -1515,11 +1535,20 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.figure-client {
   width: auto;
   height: auto;
   padding-bottom: 15px;
   -webkit-text-decoration-color: #212121;
           text-decoration-color: #212121;
+}
+
+@media (min-width: 1200px) {
+  .figure-client {
+    padding-bottom: 50px;
+  }
 }
 
 .link-client {
@@ -2157,18 +2186,30 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   }
 }
 
-.spreadsheet:nth-child(-n+8) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+@media (max-width: 450px) {
+  .spreadsheet {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 450px) {
+  .spreadsheet:nth-child(-n+8) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: auto;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2176,9 +2217,9 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -2189,34 +2230,59 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 0px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-.card {
-  width: auto;
+@media (max-width: 450px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 450px) {
+  .card {
+    width: auto;
+  }
 }
 
 .ticket {
+  width: auto;
   height: 404px;
   min-height: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 450px) {
+  .ticket {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .ticket {
+    width: 354px;
+  }
+  .ticket:nth-child(even) {
+    margin-left: 15px;
+  }
+  .ticket:nth-child(odd) {
+    margin-right: 15px;
+  }
 }
 
 @media (min-width: 1200px) {
   .ticket {
-    margin: 10px;
+    width: auto;
+    margin: 15px;
   }
   .ticket:last-child {
     padding: 0px;
   }
-}
-
-.ticket {
-  width: auto;
-  height: auto;
 }
 
 @media (max-width: 1200px) {
@@ -2384,7 +2450,7 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   fill: #2196F3;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .menu-button {
     display: none;
   }

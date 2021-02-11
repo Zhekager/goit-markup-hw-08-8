@@ -9,7 +9,7 @@
 } 
 @media (min-width:1200px){
       .figure{
-        padding-top: 94px;
+          padding-top: 94px;
     }
 } 
     
@@ -20,12 +20,21 @@
       line-height: 42px;
       text-align: center;
       letter-spacing: 0.03em;
-      width: auto;
-      height: auto;      
-      padding-bottom: 15px;
-      text-decoration-color:$accent-text;   
+        
 }
 
+.figure-client{
+     width: auto;
+      height: auto;      
+      padding-bottom: 15px;
+      text-decoration-color:$accent-text;
+}
+
+@media (min-width:1200px){
+    .figure-client{
+        padding-bottom: 50px;
+    }
+}
 
 .link-client{ 
       @include flexCenter(flex);
@@ -43,11 +52,11 @@
             fill: $accent-color;  
           }  
         }
-        @media (min-width:768px){
-            .link-client{
-                margin-left: 10px;
-                margin-right: 10px;
-              width: 226px;
+@media (min-width:768px){
+        .link-client{
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 226px;
                
             }
         }
@@ -71,10 +80,11 @@
         
 @media (max-width:1200px){
         .client {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;}
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;}
 }
+
 .client {
         display: flex;
         justify-content: center;
@@ -85,17 +95,13 @@
         flex: 0 1 calc(100% / 4 - 15px);
         min-height: 90px;
    
-  
-
 }
-
-
 
 @media (min-width: 1200px) {
   .client {
         justify-content: space-around;
     }  
-  .link-client {
+.link-client {
         flex: 0 1 calc(100% / 3 - 15px);
     }
 }

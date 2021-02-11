@@ -6,21 +6,19 @@
         border: none;
         &:hover,
         &:focus{
-          fill: $accent-color;
-           
+          fill: $accent-color;         
         }
     }
-@media (min-width:767px)  {
+@media (min-width:768px)  {
 .menu-button{
         display: none;
     }
 }
 
-
-
-.menu-button .icon-burger{
-    display: none;
-   
+.menu-button 
+  .icon-burger{
+         display: none;
+  
 }
 
 .menu-button.is-open .icon-burger{
@@ -30,11 +28,9 @@
 .menu-button.is-open .icon-close{
     display: none;
 }
-
 .menu-button{
    z-index: 2;
 }
-
 .block-menu{
     position: absolute;
     top:0px;
@@ -59,26 +55,21 @@
     }
 }
 
-
-
 .menu-stirring{
     &:not(:last-child){
          margin-bottom: 32px;
     }
    
 }
-
 .menu-stirring{
     &:first-child{
         margin-top: 33px;
     }
 }
-
 .menu-stirring{
     &:last-child{
         margin-bottom: 250px;
-    }
-    
+    }   
 }
 .menu-link{
        @include fonts (500);
@@ -86,7 +77,6 @@
       font-size: 40px;
       line-height: 47px;
       letter-spacing: 0.02em;
-
       color: $accent-text;
             &:hover,
             &:focus{
@@ -99,9 +89,7 @@
      font-size: 34px;
      line-height: 40px;
      outline: none;
-
      letter-spacing: 0.02em;
-
      color: $accent-color;  
      }
 
@@ -125,15 +113,12 @@
     color: $accent-color;
 }
 
-
-
 .menu-Instagram,
-.menu-Twitter,
-.menu-Facebook,
-.menu-LinkedIn{ 
-    display: inline-flex; 
-    
-// transform: rotate(90deg);
+ .menu-Twitter,
+  .menu-Facebook,
+   .menu-LinkedIn{ 
+       display: inline-flex;  
+       transform: rotate(90deg);
  }
 
 .menu-Instagram{
@@ -154,22 +139,18 @@
     height: 22px; 
 }
 .menu-LinkedIn{
-    padding-left: 7px;
-    
+    padding-left: 7px; 
     height: 22px; 
 }
 
 .menu-phone{
-   
         margin-bottom: 32px;
-    
 }
 .menu-reach{
     margin-bottom: 64px;
 }
 
 .menuSocial{
-   
         margin-bottom: 32px;
     
 }

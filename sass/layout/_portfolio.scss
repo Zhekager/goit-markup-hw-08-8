@@ -29,62 +29,103 @@
     }
 }
 
-.spreadsheet {
+
+@media (max-width: 450px){
+    .spreadsheet{
+            display: block;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+   
+@media (min-width: 450px){
+    .spreadsheet {
         &:nth-child(-n+8){
              display: flex;
              justify-content: center;
              flex-wrap: wrap;
-             padding-top: 30px;
-             max-width: 1200px;
+             width: auto;
              margin: 0 auto;
        }      
     }
+}
+    
 
 @media(min-width:768px){
-        .spreadsheet{
+    .spreadsheet{
             &:nth-child(-n+8){
                 display: flex;
-                justify-content: space-between;
+                justify-content: unset;
                 flex-wrap: wrap; 
             }
+         
         }
     }
 
 @media (min-width:1200px){
-       .spreadsheet{
+    .spreadsheet{
         &:nth-child(-n+8){
             display: flex;
-            // flex-wrap: wrap;
+            padding-top: 0px;
             justify-content: center;
         }
             
         }
     }
 
-    
-.card{
-        width: auto;
+@media (max-width:450px){
+    .card{
+        width: 100%;
     }
+} 
+
+@media (min-width:450px){
+    .card{
+          width: auto;
+     }
+} 
+
 
 .ticket {
+        width: auto;
         height: 404px;
         min-height: 100px;
-        margin-bottom: 20px;
-    
+        margin-bottom: 30px;
+       
+        
         }
+@media (max-width:450px){
+    .ticket{
+            width: 100%;
+            height: auto;
+            }
+        }
+       
+@media (min-width:768px){
+        .ticket{
+            width: 354px;
+          &:nth-child(even) {
+                margin-left: 15px;
+                
+            }
+          &:nth-child(odd){
+                margin-right: 15px;
+               
+            }
+        } 
+    }
 
 @media (min-width:1200px){
-        .ticket{
-            margin: 10px;
-        &:last-child{
+    .ticket{
+        width: auto;
+        margin: 15px;
+      &:last-child{
             padding: 0px;
         }
     }
-    }
+}
 
-.ticket{ 
-        width: auto;
-        height: auto;        }
+
 @media (max-width: 1200px) {
         .spreadsheet {
             justify-content: space-around;
@@ -99,6 +140,7 @@
             flex: 0 1 calc(100% / 2 - 15px);
         }
     }
+
     
 
 .animation-technocryk{

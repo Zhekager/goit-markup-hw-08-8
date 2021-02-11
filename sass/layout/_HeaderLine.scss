@@ -73,9 +73,15 @@ header
          padding-right: unset; 
     } 
 .menu-nav{
-         margin-right: 70px;
+         margin-right: 60px;
             @include flexCenter(flex); 
-         } 
+         }
+ @media (min-width:1200px){
+     .menu-nav{
+         margin-right: 70px;
+     }
+ }        
+         
 .menu-nav{
          @include fonts(500);
          font-size: 14px;
@@ -86,7 +92,7 @@ header
 .navigation{
          display: flex;   
     }
-@media(max-width:768px){
+@media(max-width:767px){
          .navigation {
              display: none; 
           }
@@ -120,7 +126,7 @@ header
      
 }
 
-@media(max-width:768px){
+@media(max-width:767px){
            .menu-nav-contacts{
                display: none;
            }
@@ -152,7 +158,6 @@ header
                outline: none;
                color: $accent-color;}
                      }            
-
 .email ,.phone{
            display: flex;     }
 

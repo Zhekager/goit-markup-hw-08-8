@@ -8,7 +8,7 @@
      font-size: 26px;
      line-height: 31px;
      letter-spacing: 0.03em;
- }
+     }
 
  .logo-footer{
      width: auto;
@@ -25,10 +25,8 @@
     
 @media (min-width:1200px){
         .logo-footer{
-
             width: 145px;
             margin-top: 0px;
-            
             display: unset;
             align-items: unset;
             justify-content: unset;
@@ -36,13 +34,13 @@
     }
 
 .accession{
-    @include flexCenter(flex);
-    padding-top: 60px;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color:$my-color;    
+        @include flexCenter(flex);
+        padding-top: 60px;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color:$my-color;    
     }  
     
 @media (min-width:768px){
@@ -52,7 +50,7 @@
         }
     }
 
-    @media (min-width:1200px){
+@media (min-width:1200px){
         .accession{
            display: unset; 
         }
@@ -65,7 +63,9 @@
     font-family: Roboto;
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.03em;       }
+    letter-spacing: 0.03em;       
+  }
+
 @media (min-width:1200px){
     .adress{
         height: 240px;
@@ -91,19 +91,18 @@
   } 
 @media (min-width:1200px){
       .adv{
-       
           padding-top: 60px;
-        
           height: 256px;
        align-items: center;
       }
   } 
-  @media(min-width: 1200px) {
+
+@media(min-width: 1200px) {
       .adv >.container{
     display: flex; 
     align-items: unset;
     justify-content: space-between;
-  }
+      }
   }
   
   
@@ -148,21 +147,20 @@
         }
     }
     
-.aside-mailto{
-    
+.aside-mailto{ 
     margin-bottom: 9px;
           
  }
 
- .aside-text{
+.aside-text{
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    &:hover,
-    &:focus{
-        color: $accent-color;
-    } 
+        &:hover,
+        &:focus{
+            color: $accent-color;
+        } 
  }
     
 .basement {
@@ -218,13 +216,13 @@
     }
 @media (min-width:1200px){
         .connexion{
-        height: auto;
-        width: 206px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-           position: unset;
+             height: auto;
+             width: 206px;
+             height: auto;
+             margin-left: auto;
+             margin-right: auto;
+             padding-bottom: 20px;
+             position: unset;
     
             
         }
@@ -272,7 +270,6 @@
 .facebook-connexion,
 .linkedin-connexion:not(:last-child){
                      margin-right: 10px; 
-
       }
 
 .instagram-connexion,.twitter-connexion,
@@ -325,11 +322,11 @@
              margin: 0px;
 
              width: 200px;
-    height: 50px;
-    right: 0px;
-    bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
+             height: 50px;
+             right: 0px;
+             bottom: 15px;
+             margin-left: auto;
+             margin-right: auto;
             
             
         }
