@@ -6,25 +6,34 @@
     font-size: 14px;
     line-height: 16.41px;
     letter-spacing: 0.03em;
-    color: $accent-text; }
+    color: $accent-text; 
+}
+
+
 .lead{
     @include fonts(400);
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: $text-color; }
+    color: $text-color; 
+}
+
 .subtitle{
     @include fonts(700);
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.03em;
-    color: $accent-text;  } 
+    color: $accent-text;  
+}
+
 .visually-hidden {
      position: absolute;
      clip: rect(0 0 0 0);
      width: 1px;
      height: 1px;
-     margin: -1px;  } 
+     margin: -1px;  
+    } 
+
 .element{
     height: auto;
     padding-top: 60px;
@@ -42,7 +51,7 @@
     flex-wrap: wrap;
 
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto; }
    
 .rubric {
     flex: 0 1 calc(100% / 4 - 15px);
@@ -120,11 +129,11 @@
                background-size: 70px 70px;      }
   @media (min-width:768px){
     .vektor-antenna,
-.vektor-clock,
-.vektor-diagram,
-.vektor-astronaut{ 
-    width: 354px;
-    height: 120px;
+    .vektor-clock,
+    .vektor-diagram,
+    .vektor-astronaut{ 
+       width: 354px;
+       height: 120px;
      }
    
   }
