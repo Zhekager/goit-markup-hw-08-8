@@ -2525,6 +2525,17 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  color: #757575;
+}
+
+.reachTelephone:hover, .reachTelephone:focus {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 34px;
   line-height: 40px;
   outline: none;
@@ -2541,6 +2552,17 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   letter-spacing: 0.02em;
   cursor: pointer;
   color: #757575;
+}
+
+.reachEmail:hover, .reachEmail:focus {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  outline: none;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .text-Instagram,
@@ -2564,8 +2586,8 @@ input[type=text]:focus, [type=tel]:focus, [type=email]:focus, textarea:focus {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(normal);
+          transform: rotate(normal);
 }
 
 .menu-Instagram {

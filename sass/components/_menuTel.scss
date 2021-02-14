@@ -85,12 +85,23 @@
     }
 
 .reachTelephone{
-    @include fonts (500);
+@include fonts (500);
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: 0.02em;
+   cursor: pointer;
+   color: $text-color; 
+    &:hover,
+    &:focus{
+     @include fonts (500);
      font-size: 34px;
      line-height: 40px;
      outline: none;
      letter-spacing: 0.02em;
-     color: $accent-color;  
+     color: $accent-color;
+         
+    }
+     
      }
 
 .reachEmail{
@@ -100,7 +111,20 @@
    letter-spacing: 0.02em;
    cursor: pointer;
    color: $text-color; 
+    &:hover,
+    &:focus{
+     @include fonts (500);
+     font-size: 34px;
+     line-height: 40px;
+     outline: none;
+     letter-spacing: 0.02em;
+     color: $accent-color;    
+    }
    }
+
+
+
+
 .text-Instagram,
 .text-Twitter,
 .text-Facebook,
@@ -118,8 +142,10 @@
   .menu-Facebook,
    .menu-LinkedIn{ 
        display: inline-flex;  
-       transform: rotate(90deg);
+       transform: rotate(normal);
+
  }
+
 
 .menu-Instagram{
     padding-right: 10px;
